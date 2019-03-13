@@ -37,6 +37,30 @@ func TestRPN(t *testing.T) {
 			expected: 24,
 			input: "12 2 * =",
 		},
+		{
+			expected: 6,
+			input: "12 2 / = =",
+		},
+		{
+			expected: 6,
+			input: "13 2 / =",
+		},
+		{
+			expected: 6,
+			input: "13 2 / =",
+		},
+		{
+			expected: 12,
+			input: "2 13 2 / * =",
+		},
+		{
+			expected: -1,
+			input: "2 3 - =",
+		},
+		{
+			expected: 1234,
+			input: "1234 6 11 5 7 - / + * =",
+		},
 	}
 
 	for _, item := range cases {
