@@ -46,8 +46,8 @@ func TestRPN(t *testing.T) {
 			input: "13 2 / =",
 		},
 		{
-			expected: 6,
-			input: "13 2 / =",
+			expected: 66,
+			input: "132 2 / =",
 		},
 		{
 			expected: 12,
